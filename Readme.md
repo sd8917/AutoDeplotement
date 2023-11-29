@@ -1,5 +1,11 @@
 # SIMPLE AUTO DEPLOMENT USING CI/CS GITHUB ACTION
 
+## Start on dev
+- npm pull
+- npm i
+- npm run dev
+- go to http://localhost:8000/api/v1/
+
 
 > Simple app.js
 
