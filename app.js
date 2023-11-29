@@ -263,6 +263,38 @@ app.get("/api/v1/users",(req,res)=>{
   })
 })
 
+app.get("/api/v1/products",(req,res)=>{
+  return res.status(200).json({
+      message:"This is home page data",
+      results:[
+        {
+          id:"32334rrtrfgfbgv",
+          name:"shoes branc",
+          price: 434,
+          description:'this is a product1',
+          category:"men's shoes",
+          quantity:4
+        },
+        {
+          id:"323343dfdsds",
+          name:"shoes branc",
+          price: 34,
+          description:'this is a product3',
+          category:"men's shoes",
+          quantity:45
+        },
+        {
+          id:"srreretrrgf32334",
+          name:"shoes branc",
+          price: 44,
+          description:'this is a product 2',
+          category:"men's shoes",
+          quantity:5
+        },
+      ]
+  })
+})
+
 // Listen on this port
 app.listen(8000, () => {
   console.log("Server started on port 8000");
